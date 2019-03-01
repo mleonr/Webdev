@@ -1,0 +1,53 @@
+response.sendRedirect("Servletn");
+String ruta=request.getRealPath("/");
+
+<a href='"+hipervinculo+"'>"+contenido+"</a>
+
+<canvas id='canvas1' witdh ='600' height='800'/>
+<script>
+var canvas = document.getElementById('canvas1');
+var context=canvas.getContext('2d');
+context.beginPath();
+context.rect("+request.getParameter("x"+i)+","+request.getParameter("y"+i)+","+request.getParameter("w"+i)+","+request.getParameter("h"+i)+");");
+context.stroke();
+</script>
+
+<table border='1'>
+	<tr>
+    	<td></td>
+    </tr>
+</table>
+
+<img src="smiley.gif" alt="Smiley face" width="42" height="42">
+
+<audio controls>
+<source src='" + f_name + "' type='audio/mpeg,audio/ogg,audio/wav'/>
+TU NAVEGADOR WEB NO SOPORTA ESTE FORMATO.
+</audio>
+
+<video controls>
+<source src='" + f_name + "' type='video/mp4,video/ogg'/>
+TU NAVEGADOR WEB NO SOPORTA ESTE FORMATO.");
+</video>
+
+<abbr title='"+request.getParameter("def"+i)+"'>"+request.getParameter("sigla"+i)+"</abbr>
+<address>""+request.getParameter("bloque"+i);</address>
+<img src='"+map+"' width='500' height='500' usemap='#map'>
+<map name='map'>
+<area shape='rect' coords=' "+request.getParameter("fig"+i+"cord0")+","+request.getParameter("fig"+i+"cord1")+","+request.getParameter("fig"+i+"cord2")+","+request.getParameter("fig"+i+"cord3")+"' alt ='Hola' href='"+((String)session.getAttribute("figura"+i))+"'>");
+</map>
+
+<select name="select">
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+
+<embed src="imagenes/song.mp3"/>
+
+<button type='button' onclick=\"alert('"+request.getParameter("textm"+i)+"')\">"+request.getParameter("textb"+i)+"</button>
+
+<object data='"+(String)session.getAttribute("img"+i)+"'>
+<param name='autoplay' value='true'>
+</object>
+<progress value="22" max="100"></progress>
